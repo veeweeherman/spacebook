@@ -3,25 +3,24 @@
 <html ng-app="spacebookApp">
   <head>
     <meta charset="utf-8">
-    <script type="text/javascript" src="node_modules/angular/angular.min.js">
-    </script>
+    <script type="text/javascript" src="node_modules/angular/angular.min.js"></script>
+    <script type="text/javascript" src="node_modules/angular-route/angular-route.js"></script>
     <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="app/components/newsfeed/newsfeedController.js"></script>
     <script type="text/javascript" src="app/components/friends/friendsController.js"></script>
+
     <title></title>
   </head>
   <body>
     SPACE BOOK
-    <!-- <div ng-view></div> -->
-    <div ng-controller="MainCtrl">
-      <p>
-        {{name}}
-      </p>
+    <div>
+      <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
+                    <li><a href="#friends"><i class="fa fa-shield"></i> friends</a></li>
+                    <li><a href="#newsfeed"><i class="fa fa-comment"></i> newsfeed</a></li>
     </div>
-    <div ng-controller="FriendsCtrl">
-      
-      <p ng-repeat="person in friendsList">
-      Hello {{person}}!
-    </p>
-    </div>
+  
+    <div ng-view></div>
+
+
   </body>
 </html>
