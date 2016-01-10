@@ -1,0 +1,29 @@
+<div >
+    <input type="text" ng-model="enteredStatus" />
+    <button ng-click="addStatus()">Add</button>
+    <ul>
+        <li ng-repeat="status in statuses">
+            {{ status }}
+            <button ng-click="removeStatus(status)">&times;</button>
+        </li>
+    </ul>
+    
+    <br/><br/>
+    
+    Added items
+    <ul>
+        <li ng-repeat="status in addedStatuses">
+            {{ status }}
+        </li>
+    </ul>
+    
+    <br/><br/>
+    
+    Deleted items
+    <ul>
+        <li ng-repeat="status in deletedStatuses">
+            {{ status }}
+        </li>
+    </ul>
+</div>
+

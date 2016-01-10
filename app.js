@@ -1,6 +1,7 @@
 angular.module('spacebookApp', [
   'friends',
   'newsfeed',
+  'status',
   'ngRoute'
 
 ])
@@ -19,6 +20,10 @@ angular.module('spacebookApp', [
       .when('/newsfeed', {
         templateUrl: 'app/components/newsfeed/newsfeedView.html',
         controller: 'NewsfeedCtrl'
+      })
+      .when('/status', {
+        templateUrl: 'app/components/status/statusView.html',
+        controller: 'StatusCtrl'
       })
 
 
