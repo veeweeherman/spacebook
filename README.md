@@ -1,3 +1,7 @@
+##Spacebook
+A simple app made in Angular as part of an job application 
+
+##To get started:
 Clone repo 
 ```
 npm install
