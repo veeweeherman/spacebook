@@ -1,13 +1,13 @@
 <div >
     <input type="text" ng-model="enteredStatus" />
-    <button ng-click="addStatus()">Add</button>
+    <button ng-click="callAddStatus(enteredStatus)">Add</button>
     <ul>
         <li ng-repeat="status in statuses">
             {{ status }}
             <button ng-click="removeStatus(status)">&times;</button>
         </li>
     </ul>
-    
+    <!-- 
     <br/><br/>
     
     Added items
@@ -24,6 +24,6 @@
         <li ng-repeat="status in deletedStatuses">
             {{ status }}
         </li>
-    </ul>
+    </ul> -->
 </div>
 

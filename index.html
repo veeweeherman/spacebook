@@ -5,23 +5,23 @@
     <meta charset="utf-8">
     <script type="text/javascript" src="node_modules/angular/angular.min.js"></script>
     <script type="text/javascript" src="node_modules/angular-route/angular-route.js"></script>
-    <script type="text/javascript" src="app.js"></script>
-    <script type="text/javascript" src="app/components/newsfeed/newsfeedController.js"></script>
-    <script type="text/javascript" src="app/components/friends/friendsController.js"></script>
-    <script type="text/javascript" src="app/components/status/statusController.js"></script>
 
-    <title></title>
+    <title>SpaceBook</title>
   </head>
   <body>
     SPACE BOOK
     <div>
       <li><a href="#status"><i class="fa fa-home"></i> status </a></li>
-                    <li><a href="#friends"><i class="fa fa-shield"></i> friends</a></li>
-                    <li><a href="#newsfeed"><i class="fa fa-comment"></i> newsfeed</a></li>
+      <li><a href="#friends"><i class="fa fa-shield"></i> friends</a></li>
+      <li><a href="#newsfeed"><i class="fa fa-comment"></i> newsfeed</a></li>
     </div>
   
     <div ng-view></div>
 
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="app/components/newsfeed/newsfeed.js"></script>
+    <script type="text/javascript" src="app/components/friends/friends.js"></script>
+    <script type="text/javascript" src="app/components/status/status.js"></script>
 
   </body>
 </html>

@@ -5,11 +5,11 @@ angular.module('spacebookApp', [
   'ngRoute'
 
 ])
- .controller('MainController', function($scope, $route, $routeParams, $location) {
-     $scope.$route = $route;
-     $scope.$location = $location;
-     $scope.$routeParams = $routeParams;
- })
+ // .controller('MainController', function($scope, $route, $routeParams, $location) {
+ //     $scope.$route = $route;
+ //     $scope.$location = $location;
+ //     $scope.$routeParams = $routeParams;
+ // })
 .config(['$routeProvider', '$locationProvider',
   function($routeProvider, $locationProvider) {
     $routeProvider
