@@ -18,7 +18,6 @@ module.exports = function(config) {
       'node_modules/angular/angular.min.js',
       'node_modules/angular-mocks/angular-mocks.js',
       'node_modules/angular-route/angular-route.min.js',
-      // 'app/components/friends/xyzabc.js',
       'app/components/**/*.js',
       
       'tests/*.test.js',
