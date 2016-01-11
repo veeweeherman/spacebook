@@ -12,7 +12,7 @@ Run localhost:3000 server with nodemon server.js or node server.js, or which eve
 
 
 ##TODO: Things I'd like to finish out in the future
-- finish out the tests
+- finish out the tests... of course I left it to the last minute and struggled
 - modularize by creating utility/helper functions in the assets/js folder
 - I heart sql-- would've liked to have made proper calls and requests for friends and recent updates.. by organizing sql schemas of multiple users and their relationships. (I did something similar in React for Habitude, https://github.com/veeweeherman/habitude ...made a user's profile with React and Postgresql)
 - or I could do away with all the dummy data and incorporate the Facebook SDK ... but I didn't want to test out status updates on my own profile :)
