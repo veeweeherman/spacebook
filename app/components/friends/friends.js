@@ -10,7 +10,7 @@ angular.module('friends',['ngRoute'])
   .controller("FriendsController", ['$scope', 'FriendsService',function($scope, FriendsService){
 
     $scope.friendsList = FriendsService.list();
-    
+    $scope.number = 88;
     
   }])
 
