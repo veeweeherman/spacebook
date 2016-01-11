@@ -1,1 +1,3 @@
 node_modules
+tests/xyz.controller.test.js
+tests/xyzabc.js

@@ -1,29 +1,64 @@
 <div >
-    <input type="text" ng-model="enteredStatus" />
-    <button ng-click="callAddStatus(enteredStatus)">Add</button>
+
+  <form >
+    <label>Status</label>
+    <input type="text" name="status" ng-model="newstatus.status" />
+
+    <br/>
+    <input type="hidden" ng-model="newstatus.id" />
+    <input type="button" value="Save" ng-click="saveStatus()"  />
+  </form>
+
+  <table >
+    <thead>
+      <tr>
+        <th>Status</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="status in statuses">
+        <td>{{ status.status }}</td>
+
+        <td> <a href="javascript:void(0)" ng-click="edit(status.id)">edit</a> | <a href="javascript:void(0)" ng-click="delete(status.id)">delete</a></td>
+
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<!--     <input type="text" ng-model="enteredStatus" />
+    <button ng-click="callAddStatus()">Add</button>
     <ul>
         <li ng-repeat="status in statuses">
             {{ status }}
             <button ng-click="removeStatus(status)">&times;</button>
         </li>
-    </ul>
-    <!-- 
-    <br/><br/>
-    
-    Added items
+    </ul> -->
+
+
+
+
+<!--     <input type="text" ng-model="enteredName" />
+    <button ng-click="addName()">Add</button>
     <ul>
-        <li ng-repeat="status in addedStatuses">
-            {{ status }}
-        </li>
-    </ul>
-    
-    <br/><br/>
-    
-    Deleted items
-    <ul>
-        <li ng-repeat="status in deletedStatuses">
-            {{ status }}
+        <li ng-repeat="name in names">
+            {{ name }}
+            <button ng-click="removeName(name)">&times;</button>
         </li>
     </ul> -->
-</div>
+
+
+
+
 

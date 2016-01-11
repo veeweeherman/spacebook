@@ -3,30 +3,22 @@ angular.module('spacebookApp', [
   'newsfeed',
   'status',
   'ngRoute'
-
 ])
- // .controller('MainController', function($scope, $route, $routeParams, $location) {
- //     $scope.$route = $route;
- //     $scope.$location = $location;
- //     $scope.$routeParams = $routeParams;
- // })
 .config(['$routeProvider', '$locationProvider',
   function($routeProvider, $locationProvider) {
     $routeProvider
       .when('/friends', {
         templateUrl: 'app/components/friends/friendsView.html',
-        controller: 'FriendsCtrl'
+        controller: 'FriendsController'
       })
       .when('/newsfeed', {
         templateUrl: 'app/components/newsfeed/newsfeedView.html',
-        controller: 'NewsfeedCtrl'
+        controller: 'NewsfeedController'
       })
       .when('/status', {
         templateUrl: 'app/components/status/statusView.html',
-        controller: 'StatusCtrl'
+        controller: 'StatusController'
       })
-
-
 
     $locationProvider.html5Mode({
       enabled: false,

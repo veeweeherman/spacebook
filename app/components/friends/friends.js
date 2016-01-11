@@ -1,8 +1,16 @@
 angular.module('friends',['ngRoute'])
-  .controller("FriendsCtrl", ['$routeParams', '$scope', function($routeParams, $scope){
-  	
-    $scope.friendsList = ["Tom", "Dick", "Harry"];
-    this.name = "FriendsCtrl";
-  	this.params = $routeParams;
+	.service('FriendsService', function(){
+		// sample data of friends of the home user
+		var friendsList = ["Tom Jones", "Dick Tracy", "Harry Metsally"];
+		// returns list of all friends
+		this.list = function(){
+			return friendsList;
+		}
+	})
+  .controller("FriendsController", ['$scope', 'FriendsService',function($scope, FriendsService){
+
+    $scope.friendsList = FriendsService.list();
+    
+    
   }])
 

@@ -1,0 +1,34 @@
+{
+  "name": "spacebook",
+  "version": "1.0.0",
+  "description": "Clone repo and npm install Run server with nodemon server.js or node server.js, or which ever witchcraft you prefer",
+  "main": "server.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "angular": "^1.4.8",
+    "angular-mocks": "^1.4.8",
+    "angular-route": "^1.4.8",
+    "express": "^4.13.3",
+    "jasmine-core": "^2.4.1",
+    "karma": "^0.13.19",
+    "karma-chrome-launcher": "^0.2.2",
+    "karma-jasmine": "^0.3.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/veeweeherman/spacebook.git"
+  },
+  "author": "Vy Cu <vy.hoang.cu@gmail.com> (veeweeherman.github.io)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/veeweeherman/spacebook/issues"
+  },
+  "homepage": "https://github.com/veeweeherman/spacebook#readme"
+}
